@@ -1,0 +1,69 @@
+"#errorView":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+"#retry":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	visible: false
+},
+"#message": {
+	top: "5",
+	left: "20",
+	right: "150",
+	font: {
+		"fontSize": "13"
+	},
+	color: "black",
+	textAlign: "left",
+	bubbleParent: true
+},
+"#retryView":{
+	right: "20",
+	height: "30",
+	width: "150",
+	touchEnabled: false
+},
+"#retryLab": {
+	right: "20",
+	font: {
+		"fontSize": "15"
+	},
+	color: "black",
+	bubbleParent: true
+},
+"#retryIcon":{
+	right: 0,
+	width: "16",
+	image: "/images/retry.png",
+	visible: false,
+	bubbleParent: true
+}
+"#notFoundLbl": {
+	font: {
+		"fontSize": "15"
+	},
+	color: "black"
+},
+".error":{
+	color: "red",
+	visible: false
+}
+"#requireLbl": {
+	font: {
+		"fontSize": "10"
+	}
+}
+"#loader[platform=android]": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG_DARK,
+	height: 40,
+	width:Ti.UI.SIZE,
+	color: '#999999'
+}
+"#loader[platform=ios]": {
+	color: "#999999",
+	message: '',
+	indicatorColor: "black",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}

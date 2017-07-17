@@ -1,0 +1,13 @@
+{
+	"id": "com.caprede.loadingIndicator",
+	"name": "com.caprede.loadingIndicator",
+	"description": "This widget is designed to show the activity indicator on screen while hitting get api.",
+	"author": "Abhishek Tayal",
+	"version": "1.0",
+	"copyright": "Copyright (c) 2017",
+	"license": "Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version": "2.1",
+	"tags": "",
+	"platforms": "android,ios"
+}

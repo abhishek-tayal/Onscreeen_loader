@@ -1,0 +1,14 @@
+<Alloy>
+	<View id="errorView">
+		<ActivityIndicator id="loader"/>
+		<Label id="notFoundLbl" visible="false" text="No data found" />
+		<View id="retry">
+			<Label id="message"/>
+			<View id="retryView">
+				<ImageView  id="retryIcon"/>
+				<Label id="retryLab" text="Retry" />
+			</View>
+		</View>
+		<Label  id="requireLbl" class="error" visible="false" bottom="1" />
+	</View>
+</Alloy> 
