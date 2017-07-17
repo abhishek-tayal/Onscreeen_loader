@@ -13,6 +13,7 @@ Download the latest distribution ZIP-file and consult the [Titanium Documentatio
 ### Usage
 
 // either: By defining widget in xml
+
 create in xml
 ```xml
 <Alloy>
@@ -25,7 +26,8 @@ create in xml
 ```
 
 // or: By defining widget in controller
-update in controller
+
+create in controller
 ```javascript
 var loader = Alloy.createWidget('com.caprede.loadingIndicator', 'widget', {});
 $.loadingView.add(loader.getView());
