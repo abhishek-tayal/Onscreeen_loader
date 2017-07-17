@@ -2,6 +2,10 @@
 
 Alloy Widget for creating a On Screen Loader.
 
+![](loading.png)
+![](no data found.png)
+![](error.png)
+
 
 ## Quick Start
 
