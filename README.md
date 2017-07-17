@@ -2,17 +2,9 @@
 
 Alloy Widget for creating a On Screen Loader.
 
-```loading
-![](loading.png)
-```
-
-```no data found
-![](nodatafound.png)
-```
-
-```error
-![](error.png)
-```
+http://res.cloudinary.com/dpgbd9tpx/image/upload/v1500289281/loading_rghlzy.png
+http://res.cloudinary.com/dpgbd9tpx/image/upload/v1500289281/nodatafound_zclewi.png
+http://res.cloudinary.com/dpgbd9tpx/image/upload/v1500289281/error_ngnewd.png
 
 
 ## Quick Start
