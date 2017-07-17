@@ -1,36 +1,44 @@
-# onscreeen_loader
-Loader to show onpage loading with the error message on error of api
+# CircularProgressbar [![Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://www.appcelerator.com/titanium/) [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/alloy-git-badge-sq.png)](http://www.appcelerator.com/alloy/)
 
-# Use
-Add widget in a view in which you wants to show the loader
+Alloy Widget for creating a On Screen Loader.
 
+
+## Quick Start
+
+### Installation [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/com.caprede.loadingIndicator)
+Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_a_Module) on how install it, or simply use the [gitTio CLI](http://gitt.io/cli):
+
+`$ gittio install com.caprede.loadingIndicator`
+
+### Usage
+
+// either: By defining widget in xml
+create in xml
+```xml
+<Alloy>
+	<Window class="container">
+            <View id="loadingView">
+		  <Widget src="com.caprede.loadingIndicator" id="loader" />
+            </View>
+	</Window>
+</Alloy>
+```
+
+// or: By defining widget in controller
+update in controller
+```javascript
 var loader = Alloy.createWidget('com.caprede.loadingIndicator', 'widget', {});
 $.loadingView.add(loader.getView());
+```
 
-Method : show()      
-Description : Show the loader in the view.        
-Example : loader.show();
+## API
 
-Method : hide()      
-Description : Hide the loader from the view.        
-Example : loader.hide();
-
-Method : hide()      
-Description : Hide the loader from the view. In case, you wants to show the loader again on the same screen after performing some function.    
-Example : loader.hide();
-
-Method : hideView()      
-Description : Remove the loader from the view. 
-Example : loader.hideView();
-
-Method : showNotFound()      
-Description : Shows the message when there is no data in the api. 
-Example : loader.showNotFound();
-
-Method : showError()      
-Description : When api goes into error, retry option will be shown with function to callback the function defined in the parameter and displaying the message given in the parameter. 
-Example : loader.showError(function(){},"Message");
-
-Method : showRequire()      
-Description : Shows the message when there is a parameter missing in the api request body. 
-Example : loader.showRequire();
+### Methods
+* `hide()` - turns off the visibility
+* `show()` - turns on the visibility
+* `hideView()` - Remove the loader
+* `showNotFound()` - Show the message when there is no data in api response
+* `hideNotFound()` - Hide the message of no data found
+* `showError(callback, message)` - Show the error message with retry option when the api goes into the error
+	* `callback` _(Function)_ - gets called when clicked on the retry message
+  * `message` _(Text)_ - the text appears on the screen in case of error
